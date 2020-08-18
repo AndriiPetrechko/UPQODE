@@ -465,7 +465,16 @@ body{
     .img_item{
         display: none;
     }
-    .path_to_move{
+    .first_path_to_move{
+        display: none;
+    }
+    .second_path_to_move{
+        display: none;
+    }
+    #Ov{
+       display: none;
+    }
+    #Ov_2{
         display: none;
     }
     .row{
@@ -477,6 +486,7 @@ body{
 }
 
 /* end style for section services */
+
 
 /* style for footer*/
 .footer{
