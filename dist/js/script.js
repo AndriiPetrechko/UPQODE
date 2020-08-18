@@ -25,9 +25,10 @@ gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 gsap.to("#Ov", {
   scrollTrigger: {
     trigger: "#Ov",
-    start: "top center",
-    end: "top 100px",
-    scrub: 5
+    start: 'center center',
+    end: '100%',
+    scrub: 14,
+    toggleActions: "restart pause reverse pause"
   },
   motionPath: {
     path: "Path",
