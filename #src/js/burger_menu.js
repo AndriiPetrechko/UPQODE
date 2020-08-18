@@ -9,4 +9,9 @@ $(document).ready(function(){
         $(this).toggleClass('burger_active');
         $('.collapse_menu').toggleClass('collapse_menu_active');
     })
+
+    $(".menu__item a").on("click", function() {
+        $(".menu__item a").removeClass("active");
+        $(this).addClass("active");
+      });
 })

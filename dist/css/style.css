@@ -102,7 +102,15 @@ body {
   letter-spacing: 0.2px;
 }
 
+.menu__item:active a {
+  border-bottom: 1px solid #fff;
+}
+
 .menu__item:hover a {
+  border-bottom: 1px solid #fff;
+}
+
+.menu__item a.active {
   border-bottom: 1px solid #fff;
 }
 
@@ -202,6 +210,10 @@ body {
   color: #fff;
   font-size: 28px;
   text-decoration: none;
+}
+
+.collapse_menu ul li:active a {
+  border-bottom: 1px solid #fff;
 }
 
 /* end style for burger menu*/
@@ -309,7 +321,7 @@ body {
   position: relative;
 }
 
-.path_to_move {
+.first_path_to_move {
   position: absolute;
   top: 320px;
   left: 175px;
@@ -320,6 +332,19 @@ body {
   position: absolute;
   top: 236px;
   left: 92px;
+}
+
+.second_path_to_move {
+  position: absolute;
+  top: 910px;
+  left: 153px;
+  z-index: 0;
+}
+
+#Ov_2 {
+  position: absolute;
+  top: 833px;
+  left: 733px;
 }
 
 .service__item__content {
@@ -612,6 +637,10 @@ body {
 
   .row {
     margin-bottom: 80px;
+  }
+
+  #Ov {
+    display: none;
   }
 }
 
