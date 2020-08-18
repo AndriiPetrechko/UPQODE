@@ -1,12 +1,13 @@
-const {src, dest} = require('gulp');
-const fileinclude = require('gulp-file-include');
-const gulp = require('gulp');
-const browsersync = require("browser-sync").create();
-const del = require("del");
-const scss = require("gulp-sass");
-const autoprefixer = require("gulp-autoprefixer");
-const group_media = require("gulp-group-css-media-queries");
-const ghPages = require('gulp-gh-pages');
+const {src, dest} = require('gulp'),
+    fileinclude = require('gulp-file-include'),
+    gulp = require('gulp'),
+    browsersync = require("browser-sync").create(),
+    del = require("del"),
+    scss = require("gulp-sass"),
+    autoprefixer = require("gulp-autoprefixer"),
+    group_media = require("gulp-group-css-media-queries"),
+    ghPages = require('gulp-gh-pages'),
+    babel = require('gulp-babel');
 
 const project_folder = "dist";
 const source_folder = "#src";
@@ -76,6 +77,9 @@ function css(){
 function js(){
     return src(path.src.js)
     .pipe(fileinclude())
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream())
 }
@@ -109,13 +113,10 @@ function clean(params){
     return del(path.clean);
 }
 
-function deploy(params){
+gulp.task('deploy', function() {
     return gulp.src('./dist/**/*')
-    .pipe(deploy({ 
-        remoteUrl: "https://github.com/AndriiPetrechko/upqode_test_task.git",
-        branch: "master"
-      }))
-}
+      .pipe(ghPages());
+  });
 
 let build = gulp.series(clean, gulp.parallel(html, css, js, images, movie, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
@@ -129,4 +130,3 @@ exports.html = html;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
-exports.deploy = deploy;

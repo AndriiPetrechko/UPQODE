@@ -65,7 +65,7 @@ body {
   margin-bottom: -5px;
   padding-left: 50px;
   padding-top: 14px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .menu {
@@ -248,7 +248,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10;
-  color: #FFF;
+  color: #fff;
 }
 
 .carousel_item__title {
@@ -314,6 +314,12 @@ body {
   top: 320px;
   left: 175px;
   z-index: 0;
+}
+
+#Ov {
+  position: absolute;
+  top: 236px;
+  left: 92px;
 }
 
 .service__item__content {

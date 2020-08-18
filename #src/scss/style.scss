@@ -5,11 +5,13 @@
     src: url("../fonts/Gilroy-UltraLight.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
-    } 
+} 
+
+$white_color: #fff;
 
 body{
     min-width: 320px;
-    background-color: #fff;
+    background-color: $white_color;
 }
 
 .container{
@@ -53,7 +55,7 @@ body{
     margin-bottom: -5px;
     padding-left: 50px;
     padding-top: 14px;
-    color: #FFFFFF;
+    color: $white_color;
 }
 @media screen and (max-width:640px){
     .navbar{
@@ -86,7 +88,7 @@ body{
     list-style: none;
 }
 .menu__item a{
-    color: #fff;
+    color: $white_color;
     text-decoration: none;
     font-family: Poppins;
     font-style: normal;
@@ -97,7 +99,7 @@ body{
     letter-spacing: 0.2px;
 }
 .menu__item:hover a{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $white_color;
 }
 @media screen and (max-width:576px){
     .header{
@@ -122,7 +124,7 @@ body{
 .line{
     width: 40px;
     height: 2px;
-    background-color: #fff;
+    background-color: $white_color;
     transition: all .8s;
 }
 .line::before{
@@ -130,7 +132,7 @@ body{
     content: "";
     width: 40px;
     height: 2px;
-    background-color: #fff;
+    background-color: $white_color;
     transform: translateY(-9px);
     transition: all .7s;
 }
@@ -139,7 +141,7 @@ body{
     content: "";
     width: 40px;
     height: 2px;
-    background-color: #fff;
+    background-color: $white_color;
     transform: translateY(7px);
     transition: all .3s;
 }
@@ -185,7 +187,7 @@ body{
     padding-bottom: 40px;
 }
 .collapse_menu ul li a{
-    color: #fff;
+    color: $white_color;
     font-size: 28px;
     text-decoration: none;
 }
@@ -226,7 +228,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 10;
-    color: #FFF;
+    color: $white_color;
 }
 .carousel_item__title{
     font-family: Poppins;
@@ -235,7 +237,6 @@ body{
     font-size: 90px;
     line-height: 100px;
 }
-
 @media screen and (max-width:1024px){
     .carousel_item__title{
         font-size:60px;
@@ -298,14 +299,13 @@ body{
     .carousel__item__btn{
         margin-top: 30px;
     }
-
 }
 
 /* end style for section banner */
 
 /* style for section services */
 .services{
-    background-color: #fff;
+    background-color: $white_color;
     margin-top: 90px;
 }
 .services__content{
@@ -317,7 +317,11 @@ body{
     left: 175px;
     z-index: 0;
 }
-
+#Ov{
+    position: absolute;
+    top: 236px;
+    left: 92px;
+}
 .service__item__content{
     margin-top: 105px;
 }
@@ -412,7 +416,7 @@ body{
     color: #00A031;
     padding: 15px 60px 15px 35px;
 
-    background-color: #fff;
+    background-color: $white_color;
     border: 2px solid #00A031;
     box-sizing: border-box;
     border-radius: 28px;
@@ -496,7 +500,7 @@ body{
     color: #777;
 }
 .footer_nav ul li:hover a{
-   border-bottom: 1px solid #fff;
+   border-bottom: 1px solid $white_color;
 }
 
 .author_right{
