@@ -71,8 +71,7 @@ function onYouTubePlayerAPIReady() {
     width: '100%',
     videoId: '668nUCeBHyY',
     events: {
-      "onReady": onPlayerReady,
-      'onStateChange': onPlayerStateChange
+      "onReady": onPlayerReady
     }
   });
 }
