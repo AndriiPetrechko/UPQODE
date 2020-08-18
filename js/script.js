@@ -10,6 +10,10 @@ $(document).ready(function () {
     $(this).toggleClass('burger_active');
     $('.collapse_menu').toggleClass('collapse_menu_active');
   });
+  $(".menu__item a").on("click", function () {
+    $(".menu__item a").removeClass("active");
+    $(this).addClass("active");
+  });
 });
 $(document).ready(function () {
   $(window).on("scroll", function () {
@@ -27,7 +31,7 @@ gsap.to("#Ov", {
     trigger: "#Ov",
     start: 'center center',
     end: '100%',
-    scrub: 14,
+    scrub: 5,
     toggleActions: "restart pause reverse pause"
   },
   motionPath: {
@@ -38,3 +42,41 @@ gsap.to("#Ov", {
   duration: 3,
   ease: "none"
 });
+gsap.to("#Ov_2", {
+  scrollTrigger: {
+    trigger: "#Ov_2",
+    start: 'center center',
+    end: '100%',
+    scrub: 5,
+    toggleActions: "restart pause reverse pause"
+  },
+  motionPath: {
+    path: "#path_2",
+    align: "#path_2",
+    alignOrigin: [0.5, 0.5]
+  },
+  duration: 3,
+  ease: "none"
+}); // Load the IFrame Player API code asynchronously.
+
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+
+function onYouTubePlayerAPIReady() {
+  player = new YT.Player('ytplayer', {
+    height: '100%',
+    width: '100%',
+    videoId: '668nUCeBHyY',
+    events: {
+      "onReady": onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(e) {
+  e.target.playVideo();
+}
