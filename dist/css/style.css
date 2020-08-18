@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-UltraLight.ttf") format("truetype");
@@ -479,6 +481,184 @@ body {
 
 /* end style for section services */
 
+/* style for contacts */
+
+.contacts {
+  width: 100%;
+}
+
+.contacts_wrapper {
+  margin-top: 205px;
+  margin-bottom: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#map {
+  width: 702px;
+  height: 756px;
+}
+
+.contacts_title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 60px;
+  color: #00A031;
+}
+
+.contacts_text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #6C6C6C;
+  margin-top: 25px;
+  margin-right: 150px;
+}
+
+.city__wrapper {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.city_box {
+  position: relative;
+  margin-right: 95px;
+  cursor: pointer;
+}
+
+.img_location {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.city__content {
+  margin-left: 50px;
+}
+
+.city_title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #00A031;
+  padding-top: 30px;
+}
+
+.city_address {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #6C6C6C;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.active_city {
+  -webkit-box-shadow: 26px 29px 15px 2px rgba(0, 0, 0, 0.27);
+  box-shadow: 26px 29px 15px 2px rgba(0, 0, 0, 0.27);
+}
+
+.map__item {
+  position: relative;
+}
+
+.company_info {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  top: 135px;
+  left: 480px;
+  background-color: #fff;
+  z-index: 15;
+  text-align: center;
+  -webkit-box-shadow: 15px 15px 15px 2px rgba(0, 0, 0, 0.27);
+  box-shadow: 15px 15px 15px 2px rgba(0, 0, 0, 0.27);
+  padding: 30px 50px 50px 60px;
+}
+
+.info_title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 51px;
+  letter-spacing: 0.4px;
+  color: #1C201E;
+}
+
+.info__sub_title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #6C6C6C;
+}
+
+.title_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.info__block {
+  margin-top: 35px;
+}
+
+.info__block_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #1C201E;
+  margin-left: 13px;
+}
+
+.info_icon {
+  width: 18px;
+  height: 18px;
+}
+
+.info__block_text {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #222222;
+}
+
+/* end style for contacts*/
+
 /* style for footer*/
 
 .footer {
@@ -592,6 +772,21 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .contacts_wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
