@@ -171,34 +171,27 @@ body{
 .collapse_menu{
     display: none;
     position: fixed;
-    top: 85px;
+    top: 0;
     left: 0;
     width: 100%;
-}
-@media screen and (max-width:640px){
-    .collapse_menu{
-        top: 45px;
-    }
+    height: 100vh;
 }
 .collapse_menu_active{
     background-color: #000;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     z-index: 15;
+    opacity: 0.8;
 }
 .collapse_menu ul{
     list-style: none;
     text-align: center;
-    padding-bottom: 40px;
 }
 .collapse_menu ul li a{
     color: $white_color;
-    font-size: 28px;
+    font-size: 48px;
     text-decoration: none;
-}
-.collapse_menu ul li:active a{
-    border-bottom: 1px solid $white_color;
 }
 /* end style for burger menu*/
 

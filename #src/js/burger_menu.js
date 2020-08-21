@@ -14,4 +14,9 @@ $(document).ready(function(){
         $(".menu__item a").removeClass("active");
         $(this).addClass("active");
       });
+
+    $(".collapse_menu_item").click(function(){
+        $('.collapse_menu').removeClass('collapse_menu_active');
+        $('.burger_menu').removeClass('burger_active');
+    })
 })
