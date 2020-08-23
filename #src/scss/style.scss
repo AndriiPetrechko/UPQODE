@@ -212,6 +212,9 @@ body{
     width: 12px;
     border-radius: 100%;
 }
+.carousel-inner{
+    height: 100vh;
+}
 .carousel-item{
     position: relative;
 }
